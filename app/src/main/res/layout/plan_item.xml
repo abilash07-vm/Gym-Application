@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardView"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="7dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/CardViewTrainingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training Name"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/emptycircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_circle" />
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_check"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/CardViewTrainingImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/CardViewTrainingName"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardViewTrainingImage"
+            android:layout_marginTop="10dp"
+            android:text="Time :" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CardViewTrainingImage"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/time"
+            android:text="minutes" />
+
+        <TextView
+            android:id="@+id/CardViewDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="10dp"
+            android:text="Description" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
